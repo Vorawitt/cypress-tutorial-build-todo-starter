@@ -1,10 +1,10 @@
 import React from 'react'
 
 export default props =>
-  <form>
+  <form onSubmit={props.handleNewTodoSubmit}>
     <input
       type='text'
-      autoFocus='true'
+      autoFocus
       value={props.currentTodo}
       onChange={props.handleNewTodoChange}
       className="new-todo"
